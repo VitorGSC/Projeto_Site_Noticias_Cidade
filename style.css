@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+a:link, a:visited {
+	color: #b10333;
+	padding: 2px;
+}
+
+/* ----------------- MENUS ----------------- */
+.menu-top ul {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  background-color: rgb(173, 27, 27);
+}
+
+.menu-top ul li {
+  color: #fff;
+  width: 110px;
+  height: 40px;
+  
+  background: url(imagens/divisor.png) no-repeat left center;
+  cursor: pointer;
+}
+
+.menu-top ul li:hover {
+  background-color: rgb(219, 31, 31);
+}
+
+.menu-top ul .primeiro {
+  background: none;
+}
+
+.menu-top ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.menu-top ul li a:hover {
+	color: #69001d;
+}
+
+body.home .menu-top ul li:nth-child(1),
+body.brasil .menu-top ul li:nth-child(2),
+body.fotos .menu-top ul li:nth-child(7)
+
+{
+  background-color: rgb(219, 31, 31);
+}
+
+.menu-left {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-right: 25px;
+  background: #fff url(imagens/fundo-caixa.png);
+  max-height: 535px;
+}
+
+.menu-left ul {
+  background-color: #fff;
+  margin: 5px;
+}
+
+.menu-left ul li {
+  list-style: none;
+  margin: 20px 5px;
+  cursor: pointer;
+}
+
+.menu-left ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9em;
+}
+
+.menu-left ul a:hover {
+	background: #f9f9f9 url(imagens/marcador.png) no-repeat left center;
+	padding-left: 20px;
+	color: #a1a1a1;
+}
+
+.menu-left div {
+  margin: 5px;
+  background-color: #fff;
+}
+
+label {
+  margin: 10px 0 0 10px;
+}
+
+input {
+  width: 80%;
+  padding: 9px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 50%;
+  padding: 5px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  background-color: rgb(173, 27, 27);
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* --------------- CONTENT --------------- */
+body {
+  background: #fff url(imagens/fundo.png) repeat-x;
+}
+
+#Container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#logo {
+  margin-top: 30px;
+}
+
+#detalhe-t {
+  float: right;
+}
+
+main {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+#content-box {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 45%; */
+  /* max-height: 30%; */
+  margin: 0 25px;
+  background: #fff url(imagens/fundo-caixa.png);
+}
+
+article div {
+  background-color: #fff;
+  margin: 5px;
+}
+
+article img {
+  width: 90%;
+  margin: 0 10px;
+  border: 3px solid #d8d8d8;
+}
+
+article p {
+  margin: 0 10px;
+  text-align: justify;
+}
+
+article a {
+  margin: 0px 10px;
+  color: rgb(173, 27, 27);
+}
+
+h1 {
+  max-width: 100%;
+  background-color: #294c71;
+  color: #fff;
+  padding: 8px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+h2 {
+  margin: 20px 10px 7px 10px;
+  width: 260px;
+  text-transform: uppercase;
+  background-color: rgb(173, 27, 27);
+  color: #fff;
+  font-size: 18px;
+}
+
+h3 {
+  margin: 20px 10px 7px 10px;
+  width: 260px;
+  background-color: #294c71;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px;
+}
+
+h5 {
+  color: rgb(0, 162, 255);
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0 7px;
+}
+
+ul li img {
+  width: 80px;
+}
+
+#section-bottom article ul li {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+}
+
+#section-bottom {
+  width: 100%;
+}
+
+#section-bottom article {
+  width: 50%;
+}
+
+#section-bottom article p {
+  margin: 0;
+  text-align: justify;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #294c71;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
